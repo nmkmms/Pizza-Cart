@@ -2,12 +2,12 @@
 <html>
 <head lang="uk">
     <meta charset="UTF-8">
-    <title>My Page</title>
-
+    <title>Buy List</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
-<body background="">
+<body>
     <div class="main-container">
         <div class="column-holder">
             <div class="left-column">
@@ -29,7 +29,7 @@
                                 <button class="button-minus">–
                                     <span class="data-tooltip">Зменшити</span>
                                 </button>
-                                <span>&#160;1&#160;</span>
+                                <span class="num">1</span>
                                 <button class="button-plus">+
                                     <span class="data-tooltip">Збільшити</span>
                                 </button>
@@ -51,7 +51,7 @@
                                 <button class="button-minus">–
                                     <span class="data-tooltip">Зменшити</span>
                                 </button>
-                                <span>&#160;1&#160;</span>
+                                <span class="num">1</span>
                                 <button class="button-plus">+
                                     <span class="data-tooltip">Збільшити</span>
                                 </button>
@@ -73,7 +73,7 @@
                                 <button class="button-minus">–
                                     <span class="data-tooltip">Зменшити</span>
                                 </button>
-                                <span>&#160;1&#160;</span>
+                                <span class="num">1</span>
                                 <button class="button-plus">+
                                     <span class="data-tooltip">Збільшити</span>
                                 </button>
@@ -91,7 +91,7 @@
                 </div>
             </div>
             <div class="right-column">
-                <div class="item-list">
+                <div class="item-list-right">
                     <div class="right-line">
                         <h4>Залишилося</h4>
                     </div>
@@ -99,15 +99,15 @@
                         <div class="stats-bought">
                             <div class="good-to-buy">
                                 <span class="good-name">Помідори</span>
-                                <span class="orange-circle">&#160;1</span>
+                                <span class="orange-circle">1</span>
                             </div>
                             <div class="good-to-buy">
                                 <span class="good-name">Печиво</span>
-                                <span class="orange-circle">&#160;1</span>
+                                <span class="orange-circle">1</span>
                             </div>
                             <div class="good-to-buy">
                                 <span class="good-name">Сир</span>
-                                <span class="orange-circle">&#160;1</span>
+                                <span class="orange-circle">1</span>
                             </div>
                         </div>
                     </div>
@@ -122,5 +122,5 @@
             <span class="created">Created by: Ilya Koshmak</span>
         </div>
     </div>
-
+    <script type="text/javascript" src="logic.js"></script>
 </body>
