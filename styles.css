@@ -199,6 +199,11 @@ button {
     height: 90%;
 }
 
+.already-bought {
+    width: 90%;
+    height: 90%;
+}
+
 .good-to-buy {
     background-color: #E8E8E8;
     border-radius: .3rem;

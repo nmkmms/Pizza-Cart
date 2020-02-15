@@ -35,7 +35,7 @@
                             </button>
                         </div>
                         <div class="decide-bar">
-                            <button class="button-bought">Куплено
+                            <button onclick="bought('tomato')" class="button-bought">Куплено
                                 <span class="data-tooltip">Додати до купленого</span>
                             </button>
                             <button onclick="deleteItem('tomato')" class="button-delete">x
@@ -57,7 +57,7 @@
                             </button>
                         </div>
                         <div class="decide-bar">
-                            <button class="button-bought">Куплено
+                            <button onclick="bought('cookies')" class="button-bought">Куплено
                                 <span class="data-tooltip">Додати до купленого</span>
                             </button>
                             <button onclick="deleteItem('cookies')" class="button-delete">x
@@ -79,7 +79,7 @@
                             </button>
                         </div>
                         <div class="decide-bar">
-                            <button class="button-bought">Куплено
+                            <button onclick="bought('cheese')" class="button-bought">Куплено
                                 <span class="data-tooltip">Додати до купленого</span>
                             </button>
                             <button onclick="deleteItem('cheese')" class="button-delete">x
@@ -113,6 +113,9 @@
                 </div>
                 <div class="right-line">
                     <h4>Куплено</h4>
+                </div>
+                <div class="right-line">
+                    <div class="already-bought"></div>
                 </div>
             </div>
         </div>

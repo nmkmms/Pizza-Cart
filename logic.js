@@ -1,4 +1,3 @@
-//Think how to fix bug (buttons on added divs are not working)
 let item_id = 0;
 $(".button").click(function () {
     let item = $(".search").val();
@@ -19,7 +18,7 @@ $(".button").click(function () {
             '        </button>\n' +
             '    </div>\n' +
             '    <div class="decide-bar">\n' +
-            '        <button class="button-bought">Куплено\n' +
+            '        <button onclick="bought(' + item_id + ')" class="button-bought">Куплено\n' +
             '            <span class="data-tooltip">Додати до купленого</span>\n' +
             '        </button>\n' +
             '        <button onclick="deleteItem(' + item_id +')" class="button-delete">x\n' +
@@ -66,12 +65,17 @@ function minus(id) {
 }
 
 function bought(id) {
-    $(".stats-bought").append(
+    let span = $("#" + id).find('.num');
+    let quantity = parseInt(span.html());
+    let text = $("#" + id).find(".just-text");
+    let item = text.html();
+
+    deleteItem(id);
+
+    $(".already-bought").append(
         '<div class="good-to-buy">\n' +
         '    <span class="good-name">' + item + '</span>\n' +
-        '    <span class="orange-circle">&#160;1</span>\n' +
+        '    <span class="orange-circle">&#160;' + quantity + '</span>\n' +
         '</div>'
     );
-    document.getElementById(id).style.display = 'none';
-    document.getElementById(rid).style.display = 'none';
 }
